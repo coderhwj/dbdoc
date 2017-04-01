@@ -25,8 +25,8 @@ public class Configration {
 		Properties pro = new Properties();
 		try {
 			File directory = new File("");// 设定为当前文件夹
-			/*//正式打包的时候使用
-			InputStreamReader in = new InputStreamReader(new FileInputStream(new File(directory.getCanonicalPath()+"\\config.properties")),Charset.forName("UTF-8"));*/
+			/*//正式打包的时候使用*/
+//			InputStreamReader in = new InputStreamReader(new FileInputStream(new File(directory.getCanonicalPath()+"\\config.properties")),Charset.forName("UTF-8"));
 			//在项目中测试的时候使用
 			InputStreamReader in = new InputStreamReader(this.getClass().getResourceAsStream("config.properties"),Charset.forName("UTF-8"));
 			pro.load(in);

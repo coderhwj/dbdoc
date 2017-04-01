@@ -75,7 +75,7 @@ public class SimpleWordTableWraper implements WordTableWraper{
 		setCellPragraphText(row, 1, c.getType());
 		setCellPragraphText(row, 2, c.getKey());
 		setCellPragraphText(row, 3, c.getIsNull()?"是":"否");
-		setCellPragraphText(row, 4, c.getDefaultValue());
+		setCellPragraphText(row, 4, c.getDefaultValue()==""?"''":c.getDefaultValue());
 		setCellPragraphText(row, 5, c.getExtra().isEmpty()?"否":"是");
 		setCellPragraphText(row, 6, c.getDescription());
 	}
